@@ -1,2 +1,2 @@
 #!/bin/bash
-CFILE=compiler.c gcc -c "$CFILE" -o "compiler.o"
+gcc -c "$CFILE" -o "${CFILE%.c}.o"
