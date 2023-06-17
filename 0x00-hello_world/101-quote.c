@@ -10,7 +10,10 @@ int main(void)
 {
 	const char *msg1 = "and that piece of art is useful\" - ";
 	const char *msg2 = "Dora Korpar, 2015-10-19\n";
-	const char *msg = msg1 msg2;
+	char msg[100];
+
+	strcpy(msg, msg1);
+	strcat(msg, msg2);
 
 	write(2, msg, strlen(msg));
 
