@@ -1,4 +1,3 @@
-#include <stdio.h>
 
 /**
  * main - prints _putchar
@@ -7,7 +6,10 @@
 
 int main(void)
 {
-	printf("_putchar\n");
+	char useputch[] = "_putchar";
+
+	putchar(useputch);
+	putchar('\n');
 
 	return (0);
 }
